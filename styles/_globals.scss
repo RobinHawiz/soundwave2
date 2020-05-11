@@ -22,10 +22,17 @@ h2 {
   color: $header2-color;
 }
 
+li {
+  list-style: none;
+}
+
 a {
   font-size: $nav-font-size;
+  text-decoration: none;
+  color: $header2-color;
 }
 
 p {
   font-size: $p-font-size;
+  color: $header2-color;
 }
