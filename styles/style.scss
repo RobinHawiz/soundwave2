@@ -17,3 +17,13 @@ $circle-color: linear-gradient(#514ed2, #c73fd2);
 
 @import "globals";
 @import "navbar";
+
+@media screen and (max-width: 599px) {
+  .navbar {
+    nav {
+      .logo {
+        justify-content: center;
+      }
+    }
+  }
+}

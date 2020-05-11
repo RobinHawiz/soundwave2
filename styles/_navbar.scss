@@ -8,6 +8,8 @@
     @include flex(row, center, space-between);
     .logo {
       @include flex(row, center, none);
+      padding: 1rem;
+      flex: 10 1 20rem;
       svg {
         width: calc(3rem + 2vmin);
         height: calc(3rem + 2vmin);
@@ -17,10 +19,14 @@
           stroke-width: calc(0.25rem + 0.25vmin);
         }
       }
+      p {
+        padding-left: calc(2vmin);
+      }
     }
     ul {
-      @include flex(row, center, space-between);
-      width: calc(25rem + 15vmin);
+      @include flex(row, center, space-around);
+      flex: 1 1 calc(25rem + 15vmin);
+      padding: 0rem calc(2vmin);
 
       li {
         padding: 1.5rem 2.5rem;
