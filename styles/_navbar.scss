@@ -33,7 +33,10 @@
       }
       .button {
         border-radius: 1rem;
-        background: greenyellow;
+        background: $button-color;
+        a {
+          color: white;
+        }
       }
     }
   }
