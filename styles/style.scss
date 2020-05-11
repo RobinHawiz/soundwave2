@@ -9,6 +9,7 @@ $background-color: radial-gradient(white, #8f8f8f);
 $circle-color: linear-gradient(#514ed2, #c73fd2);
 
 @import "globals";
+@import "navbar";
 
 @mixin flex($direction, $align, $justify) {
   display: flex;
