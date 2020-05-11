@@ -46,7 +46,7 @@ p {
 
 .navbar nav .logo svg circle {
   fill: none;
-  stroke: black;
+  stroke: #2f2f2f;
   stroke-width: 0.5rem;
 }
 /*# sourceMappingURL=style.css.map */
