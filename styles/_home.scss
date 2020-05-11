@@ -4,6 +4,9 @@
     min-height: 90vh;
     @include flex(column, center, flex-end);
     .hero {
+      padding-top: 10rem;
+      min-width: 70%;
+      @include flex(row, none, center);
       position: relative;
 
       .image-container {
@@ -19,9 +22,9 @@
       }
       svg {
         position: absolute;
-        width: 40rem;
-        height: 40rem;
-        top: -10%;
+        width: calc(15rem + 20vmin);
+        height: calc(15rem + 20vmin);
+        top: calc(13% - 10vmin);
         right: 0;
         left: 0;
         margin: 0rem auto;
@@ -34,13 +37,14 @@
       h2 {
         position: absolute;
         top: 35%;
-        left: -60%;
+        left: 0;
         animation: 1.2s ease-out h2Animation;
       }
       h1 {
         position: absolute;
         top: 55%;
-        left: 65%;
+        left: 55%;
+        padding-right: 0;
         animation: 1.2s ease-out h1Animation;
       }
     }
