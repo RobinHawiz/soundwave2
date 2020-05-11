@@ -2,5 +2,16 @@
   background: transparent;
   nav {
     min-height: 10vh;
+    .logo {
+      svg {
+        width: calc(4rem + 2vmin);
+        height: calc(4rem + 2vmin);
+        circle {
+          fill: none;
+          stroke: black;
+          stroke-width: 0.5rem;
+        }
+      }
+    }
   }
 }

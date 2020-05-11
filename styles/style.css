@@ -38,4 +38,15 @@ p {
 .navbar nav {
   min-height: 10vh;
 }
+
+.navbar nav .logo svg {
+  width: calc(4rem + 2vmin);
+  height: calc(4rem + 2vmin);
+}
+
+.navbar nav .logo svg circle {
+  fill: none;
+  stroke: black;
+  stroke-width: 0.5rem;
+}
 /*# sourceMappingURL=style.css.map */
