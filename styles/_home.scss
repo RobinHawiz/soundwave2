@@ -10,6 +10,7 @@
         height: auto;
         width: calc(25rem + 30vmin);
         display: flex;
+        animation: 1.2s ease-out imageAnimation;
         img {
           object-fit: cover;
           height: 100%;
@@ -25,7 +26,7 @@
         left: 0;
         margin: 0rem auto;
         z-index: -1;
-        animation: 1.8s ease-out circleAnimation;
+        animation: 1.2s ease-out circleAnimation;
         circle {
           fill: url("#grad");
         }
@@ -34,13 +35,13 @@
         position: absolute;
         top: 35%;
         left: -60%;
-        animation: 1.8s ease-out h2Animation;
+        animation: 1.2s ease-out h2Animation;
       }
       h1 {
         position: absolute;
         top: 55%;
         left: 65%;
-        animation: 1.8s ease-out h1Animation;
+        animation: 1.2s ease-out h1Animation;
       }
     }
   }
@@ -79,5 +80,17 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
