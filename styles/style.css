@@ -78,8 +78,8 @@ p {
 }
 
 .navbar nav .logo svg {
-  width: calc(4rem + 2vmin);
-  height: calc(4rem + 2vmin);
+  width: calc(3rem + 2vmin);
+  height: calc(3rem + 2vmin);
 }
 
 .navbar nav .logo svg circle {
