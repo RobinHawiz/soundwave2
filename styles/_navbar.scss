@@ -2,6 +2,9 @@
   background: transparent;
   nav {
     min-height: 10vh;
+    @include flex(row, center, space-between);
+    width: 90%;
+    margin: auto;
     .logo {
       svg {
         width: calc(4rem + 2vmin);
