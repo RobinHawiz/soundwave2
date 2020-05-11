@@ -6,7 +6,6 @@ $p-font-size: calc(0.9rem + 0.9vmin);
 $header1-color: #ae43d3;
 $header2-color: #2f2f2f;
 $background-color: radial-gradient(white, #8f8f8f);
-$circle-color: linear-gradient(#514ed2, #c73fd2);
 $button-color: linear-gradient(to left, #574ed3, #b043d3);
 
 @mixin flex($direction, $align, $justify) {
