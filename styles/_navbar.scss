@@ -6,6 +6,7 @@
     width: 90%;
     margin: auto;
     .logo {
+      @include flex(row, center, none);
       svg {
         width: calc(4rem + 2vmin);
         height: calc(4rem + 2vmin);
@@ -15,6 +16,9 @@
           stroke-width: 0.5rem;
         }
       }
+    }
+    ul {
+      @include flex(row, center, none);
     }
   }
 }
