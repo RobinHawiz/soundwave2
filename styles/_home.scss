@@ -1,4 +1,5 @@
 #home {
+  overflow: hidden;
   .home-wrapper {
     min-height: 90vh;
     @include flex(column, center, flex-end);
@@ -29,16 +30,40 @@
       }
       h2 {
         position: absolute;
-        top: 40%;
-        left: -100%;
-        transform: translate(40%, -40%);
+        top: 35%;
+        left: -60%;
+        animation: 1.8s ease-out h2Animation;
       }
       h1 {
         position: absolute;
-        top: 65%;
-        left: 100%;
-        transform: translate(-50%, -65%);
+        top: 55%;
+        left: 65%;
+        animation: 1.8s ease-out h1Animation;
       }
     }
+  }
+}
+
+@keyframes h2Animation {
+  0% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(20%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes h1Animation {
+  0% {
+    transform: translateX(300%);
+  }
+  75% {
+    transform: translateX(-20%);
+  }
+  100% {
+    transform: translateX(0%);
   }
 }
