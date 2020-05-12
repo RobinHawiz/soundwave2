@@ -1,18 +1,40 @@
-$header1: calc(6rem + 6vmin);
-$header2: calc(4.8rem + 4.8vmin);
+$header1: calc(1rem + 11vmin);
+$header2: calc(0.8rem + 8.8vmin);
 $header3: calc(1.4rem + 1.4vmin);
 $nav-font-size: calc(0.9rem + 0.9vmin);
 $p-font-size: calc(0.9rem + 0.9vmin);
 $header1-color: #ae43d3;
 $header2-color: #2f2f2f;
 $background-color: radial-gradient(white, #8f8f8f);
-$circle-color: linear-gradient(#514ed2, #c73fd2);
-
-@import "globals";
+$button-color: linear-gradient(to left, #574ed3, #b043d3);
 
 @mixin flex($direction, $align, $justify) {
   display: flex;
   flex-direction: $direction;
   align-items: $align;
   justify-content: $justify;
+}
+
+@import "globals";
+@import "navbar";
+@import "home";
+@import "perks";
+
+@media screen and (max-width: 599px) {
+  .navbar {
+    nav {
+      .logo {
+        justify-content: center;
+      }
+    }
+  }
+  #home {
+    .home-wrapper {
+      .hero {
+        h2 {
+          left: 5%;
+        }
+      }
+    }
+  }
 }

@@ -10,22 +10,38 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
+  background: $background-color;
 }
 
 h1 {
   font-size: $header1;
   color: $header1-color;
+  font-weight: 500;
 }
 
 h2 {
   font-size: $header2;
   color: $header2-color;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: $header3;
+  color: $header1-color;
+  font-weight: 500;
+}
+
+li {
+  list-style: none;
 }
 
 a {
   font-size: $nav-font-size;
+  text-decoration: none;
+  color: $header2-color;
 }
 
 p {
   font-size: $p-font-size;
+  color: $header2-color;
 }

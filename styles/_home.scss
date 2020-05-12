@@ -1,0 +1,100 @@
+#home {
+  overflow: hidden;
+  .home-wrapper {
+    min-height: 90vh;
+    @include flex(column, center, flex-end);
+    .hero {
+      padding-top: 10rem;
+      min-width: 70%;
+      @include flex(row, none, center);
+      position: relative;
+
+      .image-container {
+        height: auto;
+        width: calc(25rem + 30vmin);
+        display: flex;
+        animation: 1.2s ease-out imageAnimation;
+        img {
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+        }
+      }
+      svg {
+        position: absolute;
+        width: calc(15rem + 20vmin);
+        height: calc(15rem + 20vmin);
+        top: calc(13% - 10vmin);
+        right: 0;
+        left: 0;
+        margin: 0rem auto;
+        z-index: -1;
+        animation: 1.2s ease-out circleAnimation;
+        circle {
+          fill: url("#grad");
+        }
+      }
+      h2 {
+        position: absolute;
+        top: 35%;
+        left: -5%;
+        animation: 1.2s ease-out h2Animation;
+      }
+      h1 {
+        position: absolute;
+        top: 55%;
+        left: 55%;
+        padding-right: 0;
+        animation: 1.2s ease-out h1Animation;
+      }
+    }
+  }
+}
+
+@keyframes h2Animation {
+  0% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(20%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes h1Animation {
+  0% {
+    transform: translateX(300%);
+  }
+  75% {
+    transform: translateX(-20%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes circleAnimation {
+  0% {
+    transform: scale(0);
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

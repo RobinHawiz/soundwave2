@@ -1,0 +1,43 @@
+.navbar {
+  background: transparent;
+  nav {
+    min-height: 10vh;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    @include flex(row, center, space-between);
+    .logo {
+      @include flex(row, center, none);
+      padding: 1rem;
+      flex: 10 1 20rem;
+      svg {
+        width: calc(3rem + 2vmin);
+        height: calc(3rem + 2vmin);
+        circle {
+          fill: none;
+          stroke: $header2-color;
+          stroke-width: calc(0.25rem + 0.25vmin);
+        }
+      }
+      p {
+        padding-left: calc(2vmin);
+      }
+    }
+    ul {
+      @include flex(row, center, space-around);
+      flex: 1 1 calc(25rem + 15vmin);
+      padding: 0rem calc(2vmin);
+
+      li {
+        padding: 1.5rem 2.5rem;
+      }
+      .button {
+        border-radius: 1rem;
+        background: $button-color;
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+}
