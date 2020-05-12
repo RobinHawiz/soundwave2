@@ -1,11 +1,45 @@
 #perks {
   .perks-wrapper {
+    min-height: 90vh;
+    @include flex(column, none, space-around);
     .title {
+      min-height: 45vh;
+      @include flex(row, center, center);
+      h1 {
+        padding-left: 5vmin;
+      }
       svg {
         width: calc(5rem + 10vmin);
         height: calc(5rem + 10vmin);
         circle {
           fill: url("#grad");
+        }
+      }
+    }
+    .cards {
+      min-height: 45vh;
+      padding: 0 10vw;
+      padding-bottom: 15vh;
+      @include flex(row, none, space-around);
+      flex-wrap: wrap;
+
+      .card {
+        padding: calc(0.5rem + 2vmin) calc(1rem + 6vmin);
+        border-radius: 1rem;
+        background: white;
+        text-align: center;
+        margin: 3vmin;
+        box-shadow: 0rem 1.2rem 1rem 0.4vmin rgba(0, 0, 0, 0.2);
+
+        &:nth-child(1) {
+          align-self: flex-start;
+        }
+
+        &:nth-child(2) {
+          align-self: center;
+        }
+        &:nth-child(3) {
+          align-self: flex-end;
         }
       }
     }
