@@ -27,4 +27,13 @@ $button-color: linear-gradient(to left, #574ed3, #b043d3);
       }
     }
   }
+  #home {
+    .home-wrapper {
+      .hero {
+        h2 {
+          left: 5%;
+        }
+      }
+    }
+  }
 }

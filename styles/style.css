@@ -211,7 +211,7 @@ p {
 #home .home-wrapper .hero h2 {
   position: absolute;
   top: 35%;
-  left: 0;
+  left: -5%;
   -webkit-animation: 1.2s ease-out h2Animation;
           animation: 1.2s ease-out h2Animation;
 }
@@ -344,6 +344,9 @@ p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  #home .home-wrapper .hero h2 {
+    left: 5%;
   }
 }
 /*# sourceMappingURL=style.css.map */
