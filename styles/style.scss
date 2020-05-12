@@ -18,6 +18,7 @@ $button-color: linear-gradient(to left, #574ed3, #b043d3);
 @import "globals";
 @import "navbar";
 @import "home";
+@import "perks";
 
 @media screen and (max-width: 599px) {
   .navbar {

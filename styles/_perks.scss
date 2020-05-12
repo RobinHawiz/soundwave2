@@ -1,0 +1,13 @@
+#perks {
+  .perks-wrapper {
+    .title {
+      svg {
+        width: calc(5rem + 10vmin);
+        height: calc(5rem + 10vmin);
+        circle {
+          fill: url("#grad");
+        }
+      }
+    }
+  }
+}

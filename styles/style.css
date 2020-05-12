@@ -26,6 +26,12 @@ h2 {
   font-weight: 500;
 }
 
+h3 {
+  font-size: calc(1.4rem + 1.4vmin);
+  color: #ae43d3;
+  font-weight: 500;
+}
+
 li {
   list-style: none;
 }
@@ -337,6 +343,15 @@ p {
   100% {
     opacity: 1;
   }
+}
+
+#perks .perks-wrapper .title svg {
+  width: calc(5rem + 10vmin);
+  height: calc(5rem + 10vmin);
+}
+
+#perks .perks-wrapper .title svg circle {
+  fill: url("#grad");
 }
 
 @media screen and (max-width: 599px) {
